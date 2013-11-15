@@ -1,0 +1,25 @@
+<h1>Listing pages</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Val</th>
+    <th>Page</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pages.each do |page| %>
+  <tr>
+    <td><%= page.title %></td>
+    <td><%= page.val %></td>
+    <td><%= page.page_id %></td>
+    
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+
